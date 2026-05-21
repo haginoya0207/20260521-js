@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>演習1：プロフィールカード編集</title>
+  <!----- CSS ----->
+  <link rel="stylesheet" href="style.css">
+  <!----- JS ----->
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <!-- script -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+  
+  <!-- HTMLを記述 -->
+  <h1>プロフィールカード編集</h1>
+
+  <!-- 全体 -->
+  <div class="container">
+    <!-- 設定 -->
+     <div class="control">
+      <label>名前<input type="text" id="nameInput"></label>
+      <label>自己紹介<textarea id="textInput"></textarea></label>
+      <label>画像URL<input type="text" id="imgInput"></label>
+      <button id="updateBtn">プロフィール更新</button>
+      <hr>
+     <label>趣味<input type="text" id="hobbyInput"></label>
+     <button id="addHobby">通常の趣味を追加</button>
+     <button id="prependHobby">重要な趣味を追加</button>
+     <hr>
+     <button id="showDeleateBtn">削除ボタンを表示</button>
+     <button id="hideDeleateBtn">削除ボタンを非表示</button>
+     </div><!--  /.control. -->
+
+     <!-- プレビュー表示 -->
+      <div class="preview">
+        <div class="card">
+          <img id="profileImg" src="https://picsum.photos/300/200" alt="img">
+          <h2 id="name">名前</h2>
+          <p id="profile">自己紹介</p>
+          <ul id="hobbyList">
+            <li>
+              <span>ゲーム</span>
+                <button class="deleteBtn">削除</button>
+              </li>
+          </ul>
+        </div><!-- /.card -->
+      </div><!-- /.preview -->
+  </div>
+</body>
+</html>
